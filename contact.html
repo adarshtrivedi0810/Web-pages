@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<style>
+
+
+
+
+    /* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=cnumber],select, textarea {
+
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  background-image: url(data:image/jpeg;base64,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);
+  background-repeat: no-repeat;   
+}
+
+</style>
+<body>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="cnumber">Contact Number</label>
+          <input type="cnumber" id="cnumber" name="cnumber" placeholder="Mobile Number....." >
+
+          <label for="country">Courier Services</label>
+          <select id="country" name="country">
+            <option value="canada">none</option>
+            <option value="Egshyp">Egshyp</option>
+            <option value="DTDC">DTDC COURIER AND CARDO</option>
+            <option value="FedEx">FedEx Express</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+</body>
+</html

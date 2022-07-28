@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pricing</title>
+</head>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQli0YiRiQVIi93vGkVTPC19EilJjgdcy22nw&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.price {
+  width: 1170px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.single-price {
+  text-align: center;
+  width: 31%;
+  border: 2px solid rgb(54, 43, 43);
+  border-radius: 10px;
+  transition: .3s;
+}
+.price-header {
+  position: relative;
+  padding: 25px 0px 50px;
+  color: #fff;
+}
+.price-header:before {
+  content: "";
+  position: absolute;
+  background-image: url('https://www.anahian.com/wp-content/uploads/2022/07/header-bg.png');
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background-color: rgb(152, 147, 130);
+  background-position: bottom;
+  background-size: cover;
+}
+.price-header span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+.price-header h4 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+.price-header h4 span {
+  text-transform: lowercase;
+}
+.price-feature {
+  margin: 30px 50px 30px;
+  text-align: left;
+}
+.price-feature ul {
+  list-style: none;
+}
+.price-feature ul li {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed ;
+}
+.price-feature ul li.price-icon-check i {
+  color: rgb(169, 184, 184);
+}
+.price-feature ul li.price-icon-close i {
+  color: red;
+}
+.price-feature ul li i {
+  width: 20px;
+}
+.price-feature ul li:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.price-footer {
+  position: relative;
+  padding: 30px 0;
+}
+.price-footer:before {
+  position: absolute;
+  content: "";
+  background-image: url('https://www.anahian.com/wp-content/uploads/2022/07/footer-bg.png');
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color:rgb(152, 147, 130);
+  z-index: -1;
+  background-size: cover;
+}
+.price-footer a {
+  color: rgb(63, 59, 59);
+  text-decoration: none;
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.price-footer a:hover {
+  color: teal;
+}
+.single-price:hover {
+  border-color: rgb(117, 123, 123);
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .price{
+      width: 970px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price{
+      width: 750px;
+  }
+  .price-feature {
+      margin: 30px 15px 30px;
+      text-align: left;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .price{
+      width: 350px;
+      flex-direction: column;
+  }
+  .single-price{
+      width: 100%;
+      margin-bottom: 30px;
+  }
+}
+
+h1{
+  text-align: center;
+  padding-top: 15px;
+  text-decoration: underline;
+
+}
+
+
+</style>
+<body>
+
+<h1>Pricing List</h1>
+  <div class="price">
+    <div class="single-price">
+        <div class="price-header">
+            <span>FedEx Express</span>
+            <h4>Rs. 20/500gm <span>/m</span></h4>
+        </div>
+        <div class="price-feature">
+            <ul>
+                <li class="price-icon-check"><i class="fa-solid fa-check"></i> Bulk Order Processing</li>
+                <li class="price-icon-check"><i class="fa-solid fa-check"></i> Chat, Call & Email Support</li>
+                <li class="price-icon-check"><i class="fa-solid fa-check"></i> Multi Pickup Location</li>
+                <li class="price-icon-check"><i class="fa-solid fa-check"></i> 17+ Courier Partners</li>
+                <li class="price-icon-close"><i class="fa-solid fa-xmark"></i> Take control of your business cash flow with daily COD remittance and grow your <br>busines</li>
+                <li class="price-icon-close"><i class="fa-solid fa-xmark"></i> 24/7 Live Support</li>
+            </ul>
+        </div>
+        <div class="price-footer">
+            <a href="/payment.html">purchase now</a>
+        </div>
+    </div>
+    <div class="single-price">
+        <div class="price-header">
+            <span>DTDC COURIER AND CARDO</span>
+            <h4> Rs. 26/500gm  <span>/m</span></h4>
+        </div>
+        <div class="price-feature">
+            <ul>
+                <li class="price-icon-check"><i class="fa-solid fa-check"></i> Bulk Order Processing</li>
+                <li class="price-icon-check"><i class="fa-solid fa-check"></i>Multi Pickup Location</li>
+                <li class="price-icon-check"><i class="fa-solid fa-check"></i> Domestic Shipping</li>
+                <li class="price-icon-check"><i class="fa-solid fa-check"></i>  Chat, Call & Email Support</li>
+                <li class="price-icon-close"><i class="fa-solid fa-xmark"></i> Get your own branded tracking page to keep buyers updated and increase customer 
+                  <br>retention</li>
+                <li class="price-icon-close"><i class="fa-solid fa-xmark"></i> 24/7 Live Support</li>
+            </ul>
+        </div>
+        <div class="price-footer">
+            <a href="/payment.html">purchase now</a>
+        </div>
+    </div>
+    <div class="single-price">
+        <div class="price-header">
+            <span>Egshyp</span>
+            <h4>Rs. 19/500gm <span>/m</span></h4>
+        </div>
+        <div class="price-feature">
+            <ul>
+                <li class="price-icon-check"><i class="fa-solid fa-check"></i> Multi Pickup Location</li>
+                <li class="price-icon-check"><i class="fa-solid fa-check"></i> Customized Integrations</li>
+                <li class="price-icon-check"><i class="fa-solid fa-check"></i>Priority Support</li>
+                <li class="price-icon-check"><i class="fa-solid fa-check"></i>  Domestic Shipping</li>
+                <li class="price-icon-close"><i class="fa-solid fa-xmark"></i> Choose the right courier partner based on cost, estimated pickup time, service quality, and delivery performance</li>
+                <li class="price-icon-close"><i class="fa-solid fa-xmark"></i> 24/7 Live Support</li>
+            </ul>
+        </div>
+        <div class="price-footer">
+            <a href="/payment.html">purchase now</a>
+        </div>
+    </div>
+
+
+
+    
+</div>
+
+
+</body>
+</html>
+ 
